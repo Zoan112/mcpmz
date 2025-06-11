@@ -1,0 +1,157 @@
+{
+  "firebase": {
+    "name": "firebase",
+    "display_name": "Firebase CLI Tools",
+    "description": "A Model Context Protocol server for Firebase CLI tools, enabling AI assistants to interact with Firebase services including hosting, functions, database, authentication, and more.",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/firebase/firebase-tools"
+    },
+    "homepage": "https://firebase.google.com/docs/cli",
+    "author": {
+      "name": "Daynemo Team"
+    },
+    "license": "MIT",
+    "categories": [
+      "Web Services",
+      "Dev Tools"
+    ],
+    "tags": [
+      "firebase",
+      "google-cloud",
+      "hosting",
+      "functions",
+      "database",
+      "authentication",
+      "deployment"
+    ],
+    "installations": {
+      "npm": {
+        "type": "npm",
+        "command": "npx",
+        "args": [
+          "-y",
+          "firebase-tools@latest",
+          "experimental:mcp"
+        ],
+        "description": "Run Firebase CLI with experimental MCP support",
+        "recommended": true
+      }
+    },
+    "arguments": {},
+    "examples": [
+      {
+        "title": "Initialize Firebase Project",
+        "description": "Initialize a new Firebase project in the current directory",
+        "prompt": "Initialize a new Firebase project with hosting and functions"
+      },
+      {
+        "title": "Deploy to Firebase",
+        "description": "Deploy your project to Firebase hosting and functions",
+        "prompt": "Deploy my current project to Firebase"
+      },
+      {
+        "title": "List Firebase Projects",
+        "description": "Show all Firebase projects associated with your account",
+        "prompt": "List all my Firebase projects"
+      },
+      {
+        "title": "Check Firebase Status",
+        "description": "Check the status of Firebase services",
+        "prompt": "Check the current status of my Firebase project"
+      },
+      {
+        "title": "Manage Firebase Functions",
+        "description": "Deploy or manage Firebase Cloud Functions",
+        "prompt": "Deploy my Firebase functions"
+      },
+      {
+        "title": "Firebase Database Operations",
+        "description": "Interact with Firestore or Realtime Database",
+        "prompt": "Show me the structure of my Firestore database"
+      },
+      {
+        "title": "Firebase Hosting",
+        "description": "Manage Firebase hosting configuration and deployment",
+        "prompt": "Deploy my website to Firebase hosting"
+      },
+      {
+        "title": "Authentication Setup",
+        "description": "Configure Firebase Authentication",
+        "prompt": "Set up Firebase Authentication for my project"
+      }
+    ],
+    "setup_instructions": [
+      "Run 'npx -y firebase-tools@latest login --reauth' to authenticate with your Google account",
+      "Ensure you have the necessary Firebase project permissions",
+      "Configure your project using 'firebase init' if not already done"
+    ],
+    "is_official": true
+  },
+  "context7": {
+    "name": "context7",
+    "display_name": "Context7",
+    "description": "A Model Context Protocol server for Context7, enabling AI assistants to interact with advanced context management and semantic search capabilities.",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/upstash/context7-mcp"
+    },
+    "homepage": "https://upstash.com/docs/context7",
+    "author": {
+      "name": "Upstash"
+    },
+    "license": "MIT",
+    "categories": [
+      "Data Management",
+      "AI/ML"
+    ],
+    "tags": [
+      "context",
+      "semantic-search",
+      "upstash",
+      "vector-database",
+      "embeddings"
+    ],
+    "installations": {
+      "npm": {
+        "type": "npm",
+        "command": "npx",
+        "args": [
+          "-y",
+          "@upstash/context7-mcp"
+        ],
+        "description": "Run Context7 MCP server",
+        "recommended": true
+      }
+    },
+    "arguments": {},
+    "examples": [
+      {
+        "title": "Initialize Context7",
+        "description": "Set up Context7 for your project",
+        "prompt": "Initialize Context7 for managing my project context"
+      },
+      {
+        "title": "Add Context",
+        "description": "Add new context or documents to Context7",
+        "prompt": "Add this document to my Context7 knowledge base"
+      },
+      {
+        "title": "Search Context",
+        "description": "Search through your stored context",
+        "prompt": "Search my Context7 for information about authentication"
+      },
+      {
+        "title": "Manage Collections",
+        "description": "Create and manage Context7 collections",
+        "prompt": "Create a new collection in Context7 for my project documentation"
+      }
+    ],
+    "setup_instructions": [
+      "Configure your Upstash credentials",
+      "Set up your Context7 project configuration",
+      "Ensure you have the necessary API keys configured"
+    ],
+    "is_official": true
+  }
+}
