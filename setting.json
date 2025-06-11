@@ -155,89 +155,47 @@
     "is_official": true
   },
   "ahrefs": {
-    "name": "ahrefs",
-    "display_name": "Ahrefs SEO Tools",
-    "description": "A Model Context Protocol server for Ahrefs, enabling AI assistants to interact with Ahrefs SEO data including backlinks, keywords, site explorer, and competitor analysis.",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/ahrefs/mcp-server"
-    },
-    "homepage": "https://ahrefs.com/api",
-    "author": {
-      "name": "Ahrefs"
-    },
-    "license": "MIT",
-    "categories": [
-      "SEO",
-      "Marketing",
-      "Analytics"
-    ],
-    "tags": [
-      "seo",
-      "backlinks",
-      "keywords",
-      "competitor-analysis",
-      "site-explorer",
-      "marketing",
-      "analytics"
-    ],
-    "installations": {
-      "npm": {
-        "type": "npm",
-        "command": "npx",
-        "args": [
-          "@ahrefs/mcp"
-        ],
-        "description": "Run Ahrefs MCP server",
-        "recommended": true
-      }
-    },
-    "arguments": {
+  "name": "ahrefs",
+  "display_name": "Ahrefs",
+  "description": "Ahrefs Model Context Protocol Server for SEO and backlink analysis.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahrefs/mcp"
+  },
+  "author": {
+    "name": "ahrefs"
+  },
+  "license": "MIT",
+  "categories": [
+    "SEO",
+    "Analytics"
+  ],
+  "tags": [
+    "SEO",
+    "Backlinks",
+    "Analytics",
+    "API"
+  ],
+  "arguments": {
+    "API_KEY": {
+      "description": "Ahrefs API key for authenticating with the Ahrefs API",
+      "required": true,
+      "example": "YOUR_API_KEY_HERE"
+    }
+  },
+  "installations": {
+    "npm": {
+      "type": "npm",
+      "command": "npx",
+      "args": [
+        "@ahrefs/mcp"
+      ],
       "env": {
-        "API_KEY": {
-          "description": "Your Ahrefs API key",
-          "required": true,
-          "type": "string"
-        }
-      }
-    },
-    "examples": [
-      {
-        "title": "Site Analysis",
-        "description": "Analyze a website's SEO metrics and backlink profile",
-        "prompt": "Analyze the SEO performance of example.com"
+        "API_KEY": "${API_KEY}"
       },
-      {
-        "title": "Keyword Research",
-        "description": "Research keywords and their difficulty scores",
-        "prompt": "Find keyword opportunities for 'digital marketing'"
-      },
-      {
-        "title": "Backlink Analysis",
-        "description": "Analyze backlinks pointing to a domain",
-        "prompt": "Show me the top backlinks for competitor.com"
-      },
-      {
-        "title": "Competitor Research",
-        "description": "Compare your site with competitors",
-        "prompt": "Compare my site's SEO metrics with my top 3 competitors"
-      },
-      {
-        "title": "Content Gap Analysis",
-        "description": "Find content opportunities based on competitor analysis",
-        "prompt": "Find content gaps between my site and competitors"
-      },
-      {
-        "title": "Rank Tracking",
-        "description": "Track keyword rankings for your domain",
-        "prompt": "Track my rankings for target keywords"
-      }
-    ],
-    "setup_instructions": [
-      "Sign up for an Ahrefs account and obtain an API key",
-      "Set the API_KEY environment variable with your Ahrefs API key",
-      "Ensure you have sufficient API credits for your queries"
-    ],
-    "is_official": true
-  }
+      "description": "Run with npx (requires npm install)"
+    }
+  },
+  "homepage": "https://github.com/ahrefs/mcp"
+}
 }
