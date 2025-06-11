@@ -16,7 +16,7 @@ from mcpm.utils.config import DEFAULT_CONFIG_DIR
 logger = logging.getLogger(__name__)
 
 # Default repository URL
-DEFAULT_REPO_URL = "https://github.com/Zoan112/mcpmz/blob/main/setting.json"
+DEFAULT_REPO_URL = "https://raw.githubusercontent.com/Zoan112/mcpmz/refs/heads/main/setting.json"
 
 # Default cache file path
 DEFAULT_CACHE_FILE = os.path.join(DEFAULT_CONFIG_DIR, "servers_cache.json")
