@@ -197,5 +197,113 @@
       }
     },
     "homepage": "https://github.com/ahrefs/mcp"
+  },
+  "playwright": {
+    "name": "playwright",
+    "display_name": "Microsoft Playwright",
+    "description": "A Model Context Protocol server that provides browser automation capabilities using Playwright. Enables LLMs to interact with web pages through structured accessibility snapshots, bypassing the need for screenshots or visually-tuned models.",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/microsoft/playwright-mcp"
+    },
+    "homepage": "https://playwright.dev",
+    "author": {
+      "name": "Microsoft"
+    },
+    "license": "MIT",
+    "categories": [
+      "Browser Automation",
+      "Testing",
+      "Web Scraping"
+    ],
+    "tags": [
+      "playwright",
+      "browser-automation",
+      "testing",
+      "web-scraping",
+      "accessibility",
+      "microsoft",
+      "automation"
+    ],
+    "installations": {
+      "npm": {
+        "type": "npm",
+        "command": "npx",
+        "args": [
+          "@playwright/mcp@latest"
+        ],
+        "description": "Run Microsoft Playwright MCP server",
+        "recommended": true
+      }
+    },
+    "arguments": {
+      "browser": {
+        "description": "Browser or chrome channel to use (chrome, firefox, webkit, msedge, chrome-beta, etc.)",
+        "required": false,
+        "type": "string",
+        "default": "chrome"
+      },
+      "headless": {
+        "description": "Run browser in headless mode",
+        "required": false,
+        "type": "boolean",
+        "default": false
+      },
+      "vision": {
+        "description": "Run server that uses screenshots instead of accessibility snapshots",
+        "required": false,
+        "type": "boolean",
+        "default": false
+      },
+      "port": {
+        "description": "Port to listen on for SSE transport",
+        "required": false,
+        "type": "number"
+      },
+      "user-data-dir": {
+        "description": "Path to the user data directory",
+        "required": false,
+        "type": "string"
+      }
+    },
+    "examples": [
+      {
+        "title": "Web Navigation",
+        "description": "Navigate to websites and interact with page elements",
+        "prompt": "Navigate to google.com and search for 'Model Context Protocol'"
+      },
+      {
+        "title": "Form Filling",
+        "description": "Automatically fill out web forms",
+        "prompt": "Fill out the contact form on this website with the provided information"
+      },
+      {
+        "title": "Data Extraction",
+        "description": "Extract structured data from web pages",
+        "prompt": "Extract all product names and prices from this e-commerce page"
+      },
+      {
+        "title": "Screenshot Capture",
+        "description": "Take screenshots of web pages",
+        "prompt": "Take a screenshot of the current page and save it"
+      },
+      {
+        "title": "Automated Testing",
+        "description": "Perform automated testing of web applications",
+        "prompt": "Test the login functionality by entering credentials and verifying the result"
+      },
+      {
+        "title": "Tab Management",
+        "description": "Manage browser tabs and navigate between them",
+        "prompt": "Open three new tabs with different websites and switch between them"
+      }
+    ],
+    "setup_instructions": [
+      "Ensure Node.js is installed on your system",
+      "Run 'npx @playwright/mcp@latest --install' if you get browser installation errors",
+      "The server will create a persistent browser profile for storing login sessions",
+      "Use --headless flag for background operations or --vision flag for screenshot-based interactions"
+    ],
+    "is_official": true
   }
 }
