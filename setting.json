@@ -154,7 +154,51 @@
     ],
     "is_official": true
   },
-  "ahrefs": {
+  "ahrefs2": {
+  "name": "ahrefs",
+  "display_name": "Ahrefs",
+  "description": "Ahrefs Model Context Protocol Server for SEO and backlink analysis.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahrefs/mcp"
+  },
+  "author": {
+    "name": "ahrefs"
+  },
+  "license": "MIT",
+  "categories": [
+    "SEO",
+    "Analytics"
+  ],
+  "tags": [
+    "SEO",
+    "Backlinks",
+    "Analytics",
+    "API"
+  ],
+  "arguments": {
+    "API_KEY": {
+      "description": "Ahrefs API key for authenticating with the Ahrefs API",
+      "required": true,
+      "example": "YOUR_API_KEY_HERE"
+    }
+  },
+  "installations": {
+    "npm": {
+      "type": "npm",
+      "command": "npx",
+      "args": [
+        "@ahrefs/mcp"
+      ],
+      "env": {
+        "API_KEY": "${API_KEY}"
+      },
+      "description": "Run with npx (requires npm install)"
+    }
+  },
+  "homepage": "https://github.com/ahrefs/mcp"
+},
+"ahrefs": {
   "name": "ahrefs",
   "display_name": "Ahrefs",
   "description": "Ahrefs Model Context Protocol Server for SEO and backlink analysis.",
