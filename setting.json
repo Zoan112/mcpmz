@@ -2,7 +2,7 @@
   "firebase": {
     "name": "firebase",
     "display_name": "Firebase CLI Tools",
-    "description": "A Model Context Protocol server for Firebase CLI tools, enabling AI assistants to interact with Firebase services including hosting, functions, database, authentication, and more.",
+    "description": "<img src='https://icons.daynemo.com/firebase-logo.svg' class='inline-icon'> A Model Context Protocol server for Firebase CLI tools, enabling AI assistants to interact with Firebase services including hosting, functions, database, authentication, and more.",
     "repository": {
       "type": "git",
       "url": "https://github.com/firebase/firebase-tools"
@@ -91,7 +91,7 @@
   "context7": {
     "name": "context7",
     "display_name": "Context7",
-    "description": "A Model Context Protocol server for Context7, enabling AI assistants to interact with advanced context management and semantic search capabilities.",
+    "description": "<img src='https://icons.daynemo.com/context7-logo.svg' class='inline-icon'> A Model Context Protocol server for Context7, enabling AI assistants to interact with advanced context management and semantic search capabilities.",
     "repository": {
       "type": "git",
       "url": "https://github.com/upstash/context7-mcp"
@@ -154,10 +154,10 @@
     ],
     "is_official": true
   },
-  "ahrefs-zohar": {
+  "ahrefs": {
     "name": "ahrefs",
     "display_name": "Ahrefs",
-    "description": "Ahrefs Model Context Protocol Server for SEO and backlink analysis.",
+    "description": "<img src='https://icons.daynemo.com/ahrefs-logo.svg' class='inline-icon'>  Ahrefs Model Context Protocol Server for SEO and backlink analysis.",
     "repository": {
       "type": "git",
       "url": "https://github.com/ahrefs/mcp"
@@ -201,7 +201,7 @@
   "playwright": {
     "name": "playwright",
     "display_name": "Microsoft Playwright",
-    "description": "A Model Context Protocol server that provides browser automation capabilities using Playwright. Enables LLMs to interact with web pages through structured accessibility snapshots, bypassing the need for screenshots or visually-tuned models.",
+    "description": "<img src='https://icons.daynemo.com/playwrite-logo.svg' class='inline-icon'> A Model Context Protocol server that provides browser automation capabilities using Playwright. Enables LLMs to interact with web pages through structured accessibility snapshots, bypassing the need for screenshots or visually-tuned models.",
     "repository": {
       "type": "git",
       "url": "https://github.com/microsoft/playwright-mcp"
